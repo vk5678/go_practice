@@ -27,13 +27,22 @@ func (n *name) renaming(newName string) string {
 func main() {
 
 	go func() {
+
+		fmt.Println("Inside an another go routine")
+
+	}()
+	go func() {
 		fmt.Println("this is inside go routine")
 	}()
-
+	fmt.Println("hello wo")
+	fmt.Println("hello world")
 	time.Sleep(time.Millisecond * 100)
 	var n namingConvention = &name{"Are", "manikanta", "Mr"}
 	fmt.Println(n.formatting())
 	fmt.Println(n.renaming("Manikanta vinod kumar"))
 	fmt.Println(strings.ToUpper("goher"))
-
+	fmt.Println("Hello world")
+	fmt.Println("hello world")
+	fmt.Println("hello world")
+	fmt.Println("The intellisense in not working")
 }

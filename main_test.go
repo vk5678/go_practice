@@ -1,6 +1,8 @@
 package main
 
-import "testing"
+import (
+	"testing"
+)
 
 func TestFoo(t *testing.T) {
 	result := Foo()
@@ -20,4 +22,5 @@ func TestQuiz(t *testing.T) {
 	if result != "quiz" {
 		t.Error("intentional Error 2")
 	}
+
 }
